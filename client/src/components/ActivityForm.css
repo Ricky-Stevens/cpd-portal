@@ -1,0 +1,51 @@
+
+.activity-form .activity-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #eaeaea;
+    margin: 0 5px 10px;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+}
+
+.activity-form .title {
+    flex-basis: 99%;
+}
+
+.activity-form .date, .activity-form .status, .activity-form .format {
+    flex-basis: 32%;
+}
+
+.activity-form .notes, .activity-form .references {
+    flex-basis: 49%;
+}
+
+.activity-form .add-new-activity-row {
+    width:100%;
+    margin:7.5px;
+    background: #ddd;
+    border:1px solid #aaa;
+    padding: 2.5px 0;
+    border-radius: 7.5px;
+    font-size:20px;
+    cursor: pointer;
+}
+
+.activity-form .remove-activity {
+    position: absolute;
+    right: -15px;
+    top: 0;
+    padding: 5px;
+    background: #a66;
+    font-size: 14px;
+    border: 0;
+    margin: 0 5px 0;
+    height: 20px;
+    width: 20px;
+    line-height: 5px;
+    border-radius: 5px;
+    color: #eee;
+    cursor: pointer;
+}

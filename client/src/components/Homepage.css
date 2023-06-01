@@ -1,0 +1,371 @@
+/* Homepage.css */
+
+
+.table-container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.table-container .add-link {
+  float:right;
+  display: inline-block;
+  background: #d0d0d0;
+  border-radius:5px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  text-decoration: none;
+  color:#333;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+}
+
+.table-container .add-link:hover {
+  background:#e0e0e0;
+  transition: background-color .5s ease-in-out;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 3px; /* reduced spacing */
+  margin-top: 20px;
+  height: 1px;
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  background-color: transparent; /* make cells transparent */
+}
+
+table th {
+  background-color: #d0d0d0; /* darker gray */
+  color: #333; /* dark gray */
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+}
+
+table th.header1, table th.header2 {
+  background-color: #b0b0b0;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+}
+
+table th.header2 {
+  border-left: 2px solid #fff;
+}
+
+table td .date-wrapper {
+  padding: 4px 6px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+table td .top-date{
+  text-align: center;
+  display:block;
+}
+
+table td .bottom-date{
+  display:block;
+  font-size: 0.8em;
+  letter-spacing: .08em;
+  text-align: center;
+  font-weight: bold;
+}
+
+table tbody td {
+  cursor: pointer;
+}
+
+table .col1 {
+  font-size: 0.9em;
+  min-width: 270px;
+}
+
+table .col2 {
+  font-size: 0.8em; /* reduce text size */
+  white-space: pre-line;
+}
+
+table .col3 {
+  border-left: 2px solid #fff;
+}
+
+table .col1, table .col2 {
+  width: auto;
+}
+
+table .col3, table .col4 {
+  width: 50px;
+  text-align: center;
+}
+
+table .col4, table .col5, table .col6, table .col7, table .col8, table .col9, table .col3-4 {
+  text-align: center;
+}
+
+table .col3-4 {
+  white-space: nowrap;
+  font-size: 0.9em;
+  padding: 0;
+  color: #666;
+}
+
+.tab-colour {
+  width: 25px;
+  display: flex;
+  height: 100%;
+  border-radius: 5px;
+  line-height: 100%;
+  align-items: center;
+  text-indent: 6px;
+}
+
+table .status-upcoming .date-wrapper {
+  background: #ddd
+}
+
+table .status-open .date-wrapper {
+  background:#efffef;
+}
+
+table .status-completed .date-wrapper {
+  background:#e9f9ff;
+}
+
+.status-upcoming {
+  background: linear-gradient(to right, #e8e8e8, #f0f0f0); /* lighter gray gradient */
+  transition: background 1s ease;
+}
+
+.status-upcoming .tab-colour {
+  background:#ccc;
+  color: #e8e8e8;
+  font-weight: bold;
+  text-indent: 8px;
+}
+
+.status-open {
+  background: linear-gradient(to right, #d8f0d3, #ecfce8); /* lighter green gradient */
+  transition: background 1s ease;
+}
+
+.status-open .tab-colour {
+  background:#e9f9e9;
+  color: #98c78f;
+  font-weight: bold;
+}
+
+.status-completed {
+  background: linear-gradient(to right, #d5e4eb, #e4eef2); /* lighter blue gradient */
+  transition: all 1s ease;
+}
+
+.status-completed .tab-colour {
+  background:#e9f9ff;
+  color: #77a3b8;
+  font-weight: bold;
+}
+
+.status-upcoming:hover {
+  background: linear-gradient(to right, #e1e1e1, #f0f0f0); /* 5% darker */
+}
+
+.status-open:hover {
+  background: linear-gradient(to right, #c8ebc0, #ecfce8); /* lighter green gradient */
+}
+
+.status-completed:hover {
+  background: linear-gradient(to right, #bcd7e3, #e4eef2); /* 5% darker */
+  transition: all 1s ease;
+}
+
+.slide-pane {
+  min-width: 700px;
+  background: #f5f5f5;
+  color: #333;
+  padding: 20px;
+  overflow: auto;
+}
+
+.slide-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  width: 1400px; /* same width as table */
+  margin: 40px auto 20px;
+  padding: 20px 0 0;
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  font-size: 0.8em;
+}
+
+.footer .icons {
+  float:right;
+  margin: 15px 0 0 0
+}
+
+.footer .icons a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.edit-button {
+  float:right;
+  background: #aaa;
+  padding: 6px 10px;
+  border-radius: 5px;
+  color: #666;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+table.activity-table {
+  margin-top:0;
+  vertical-align: top;
+  cursor: default;
+}
+
+table.activity-table tbody tr:nth-of-type(odd) {
+ background: #e9e9e9;
+}
+
+table.activity-table tbody tr, table.activity-table tbody tr td{
+  cursor: default;
+}
+
+table.activity-table tbody tr:hover{
+  background: #ddd;
+}
+
+table.activity-table tbody tr td{
+  vertical-align: top;
+}
+
+table.activity-table tbody tr td.col-3 {
+  min-width:300px;
+  font-size: 0.9em;
+}
+
+table.activity-table tbody tr td.col-4 {
+  width:1px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table.activity-table tbody tr td.col-5 {
+  font-size: 0.8em;
+  white-space: pre-line;
+  min-width:300px;
+}
+
+table.activity-table tbody tr td.col-6 {
+  font-size: 0.6em;
+  white-space: pre-line;
+}
+
+table.activity-table .tab-colour {
+  width: 25px;
+  display: flex;
+  height: 100%;
+  border-radius: 5px;
+  line-height: 100%;
+  align-items: center;
+  text-indent: 5px;
+}
+
+table.activity-table .tab-colour.status-upcoming {
+  background:#ccc;
+  color: #e8e8e8;
+  font-weight: bold;
+  text-indent: 9px;
+}
+
+table.activity-table .tab-colour.status-in-progress{
+  background:#e9f9e9;
+  color: #98c78f;
+  font-weight: bold;
+}
+
+table.activity-table .tab-colour.status-completed {
+  background:#e9f9ff;
+  color: #77a3b8;
+  font-weight: bold;
+}
+
+table.activity-table .format-colour {
+  display: inline-block;
+  padding: 7px 5px;
+  font-size: 0.8em;
+  border-radius: 5px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  line-height: 1em;
+}
+
+table.activity-table .format-colour.status-bcs-webinar {
+  background: #9f7dc9;
+}
+
+table.activity-table .format-colour.status-webinar {
+  background: #b17dc9;
+}
+
+table.activity-table .format-colour.status-online-resource {
+  background: #7d9cc9;
+}
+
+table.activity-table .format-colour.status-online-course {
+  background: #c9b17d;
+}
+
+table.activity-table .format-colour.status-practical {
+  background: #7dc3c9;
+}
+
+table.activity-table .format-colour.status-conference {
+  background: #c2c97d;
+}
+
+table.activity-table .format-colour.status-book {
+  background: #7dc9a7;
+}
+
+table.activity-table .format-colour.status-audio-book {
+  background: #7dc981;
+}
+
+table.activity-table .format-colour.status-e-book {
+  background: #7dc9c7;
+}
+
+table.activity-table .format-colour.status-existing-role {
+  background: #c97dc1;
+}
+
+table.activity-table .format-colour.status-university-paper {
+  background: #c97d7d;
+}
+
+.slider-header {
+  margin: -10px 0 10px;
+  overflow:hidden;
+}
+
+.slider-header p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.slide-pane__content {
+  padding-bottom: 50px;
+}

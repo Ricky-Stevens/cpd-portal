@@ -1,0 +1,53 @@
+h1#login-title {
+    color: #333; /* dark gray */
+    text-align: center;
+    background-color: #f1f1f1; /* lighter gray */
+    padding: 20px 0; /* remove horizontal padding */
+    width: 500px; /* same width as table */
+    margin: 40px auto 0;
+    border-radius: 5px; /* slightly round corners */
+}
+
+.login {
+    max-width: 500px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.login input {
+    float: left;
+    padding: 15px 30px;
+    background: #f5f5f5;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    color: #ddd;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.login button {
+    float: right;
+    padding: 15px 30px;
+    background: #ddd;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0;
+    color: #aaa;
+    border-radius: 10px;
+}
+
+.login .error {
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+    padding: 5px 0;
+    margin: 20px 0;
+    background: #c99;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}

@@ -1,0 +1,102 @@
+.goal-form {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.goal-form label {
+    margin: 0 0 5px 5px;
+    display: block;
+}
+
+.goal-form label span {
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    text-indent: 2px;
+}
+
+.goal-form input, .goal-form select, .goal-form textarea {
+    padding: 5px 10px;
+    background: #f5f5f5;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #aaa;
+    color: #999;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.goal-form textarea {
+    height: 60px;
+}
+
+.goal-form h1 {
+    color: #333;
+    text-align: left;
+    background-color: #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+    position: relative;
+    font-size: 1.4em;
+}
+
+.goal-form .main-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: #333;
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 5px auto 0;
+    border-radius: 5px;
+}
+
+.goal-form .main-form .title {
+    flex: 3 1;
+}
+
+.goal-form .main-form .status {
+    flex: 1 1;
+}
+
+.goal-form .main-form .description {
+    flex-basis: 100%;
+}
+
+.goal-form .main-form .description textarea {
+    height: 50px;
+}
+
+.goal-form .activity-form {
+    color: #333;
+    margin: 5px auto 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.goal-form .activity-form h2 {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.submit-row {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.submit-row button {
+    display: inline-block;
+    height: 30px;
+    background: #aaa;
+    color:#fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    padding: 6px 30px;
+    border-radius: 5px;
+}
