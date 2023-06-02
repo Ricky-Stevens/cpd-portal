@@ -60,6 +60,11 @@ table th.header2 {
   border-left: 2px solid #fff;
 }
 
+table th.header2 a {
+  color: #333;
+  text-decoration: none;
+}
+
 table td .date-wrapper {
   padding: 4px 6px;
   display: inline-block;

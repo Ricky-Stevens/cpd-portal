@@ -79,7 +79,7 @@ const Homepage: React.FC = () => {
             <thead>
             <tr>
               <th className="header1" colSpan={3}>CPD Goals</th>
-              <th className="header2" colSpan={7}>Activity Log</th>
+              <th className="header2" colSpan={7}>Activity <Link to="/login">Log</Link></th>
             </tr>
             <tr>
               <th className="col1" colSpan={2}>Goal Summary</th>
