@@ -10,6 +10,9 @@
 
 # production
 /build
+/dist/www
+*.zip
+
 
 # misc
 .DS_Store
