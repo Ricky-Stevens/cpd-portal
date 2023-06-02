@@ -1,5 +1,5 @@
 // Import required libraries
-import express, { Request, Response } from 'express';  // Express for building the API
+import express, {NextFunction, Request, Response} from 'express';  // Express for building the API
 import dotenv from 'dotenv';  // Dotenv to handle environment variables
 import cors from 'cors';  // CORS to handle cross-origin requests
 import {maxBy, minBy, sumBy} from 'lodash';  // Lodash for utility functions
@@ -78,7 +78,7 @@ dotenv.config();
     });
 
     // Middleware to handle errors
-    app.use((err: any, req: Request, res: Response) => {
+    app.use((err: any, req: Request, res: Response, next: NextFunction) => {
         // Log the error stack trace to the console
         console.error(err.stack);
         // Send a generic error message to the client
